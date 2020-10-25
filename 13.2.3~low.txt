@@ -1,0 +1,9 @@
+mount -o rw,union,update /
+
+echo "" >> /.mount_rw
+
+mv /Applications/Setup.app/Setup /Applications/Setup.app/Setup.bak
+
+uicache -a
+
+killall backboardd
